@@ -9,8 +9,21 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div>
+    <div id ="anka">
         <h2>Hello from node and Heroku.</h2>
+        <script>
+            var xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4)
+                {
+                    document.getElementById('anka').innerHTML;
+                }
+            };
+
+            xhr.open('GET', 'herokulink');
+            xhr.send();
+        </script>
     </div>
 </body>
 </html>
