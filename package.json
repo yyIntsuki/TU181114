@@ -9,17 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "express": "^4.16.4"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yyIntsuki/TU181114.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yyIntsuki/TU181114/issues"
-  },
-  "homepage": "https://github.com/yyIntsuki/TU181114#readme",
-  "description": ""
+  }
 }
