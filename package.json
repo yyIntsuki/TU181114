@@ -1,7 +1,6 @@
 {
   "name": "popp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "npm": "^6.4.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyIntsuki/TU181114.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yyIntsuki/TU181114/issues"
+  },
+  "homepage": "https://github.com/yyIntsuki/TU181114#readme",
+  "description": ""
 }
