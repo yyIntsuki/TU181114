@@ -12,7 +12,6 @@ app.use('/', home)
 app.use('/', home)
 // app.use('/products', product);
 
->>>>>>> 997dece0a58726f29dfd3e4f67be67a96f2864ef
 app.listen(PORT, function(){
   console.log('Server up and running at port 4242');
 });
