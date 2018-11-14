@@ -1,11 +1,11 @@
 var express = require('express');
 var app = express();
 var PORT = process.env.PORT || 4242;
-
-app.get('/', function(req, res){
-    res.sendFile(__dirname + '/www/index.html');
-});
-
+var home = require('./routes/route');
+​
+app.use('/', home)
+// app.use('/products', product);
+​
 app.listen(PORT, function(){
-    console.log('Server up and running at port 4242');
+  console.log('Server up and running at port 4242');
 });
