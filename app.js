@@ -8,6 +8,7 @@ var db = mongoose.connection;
 
 var PORT = process.env.PORT || 4242;
 var home = require('./routes/home.route');
+var product = require('./routes/product.route');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
