@@ -1,8 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
+var PORT = process.env.PORT || 4242;
 
-app.listen(4242, function(){
+app.listen(PORT, function(){
     console.log('Server up and running at port 4242');
 });
 
