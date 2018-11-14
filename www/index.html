@@ -5,25 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TU181114</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <script src="request.js"></script> 
 </head>
 <body>
-    <div id ="anka">
+    <div id ="body-content">
         <h2>Hello from node and Heroku.</h2>
-        <!-- <script>
-            var xhr = new XMLHttpRequest();
-
-            xhr.onreadystatechange = function(){
-                if(this.readyState == 4)
-                {
-                    document.getElementById('anka').innerHTML = this.responseText;
-                }
-            };
-
-            xhr.open('GET', 'https://hidden-forest-30275.herokuapp.com/');
-            xhr.send();
-        </script> -->
 
         <form action="/products/create" method="POST">
             <input type="text" placeholder="name" name="name">

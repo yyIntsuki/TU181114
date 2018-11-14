@@ -20,6 +20,10 @@ mongoose.connect(db_url, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
 
-app.listen(PORT, function(){
-  console.log('Server up and running at port 4242');
+app.listen(PORT, function(err){
+  if(err) {
+    console.log('Connection error.');
+  } else {
+    console.log('Server up and running at port', + PORT + '.');
+  }
 });
