@@ -17,11 +17,11 @@
             xhr.onreadystatechange = function(){
                 if(this.readyState == 4)
                 {
-                    document.getElementById('anka').innerHTML;
+                    document.getElementById('anka').innerHTML = this.responseText;
                 }
             };
 
-            xhr.open('GET', 'herokulink');
+            xhr.open('GET', 'https://hidden-forest-30275.herokuapp.com/');
             xhr.send();
         </script>
     </div>
