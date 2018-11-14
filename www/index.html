@@ -11,7 +11,7 @@
 <body>
     <div id ="anka">
         <h2>Hello from node and Heroku.</h2>
-        <script>
+        <!-- <script>
             var xhr = new XMLHttpRequest();
 
             xhr.onreadystatechange = function(){
@@ -23,7 +23,12 @@
 
             xhr.open('GET', 'https://hidden-forest-30275.herokuapp.com/');
             xhr.send();
-        </script>
+        </script> -->
+
+        <form action="/create" method="POST">
+            <input type="text" placeholder="name" name="name">
+            <input type="text" placeholder="price" name="price">
+            <button type="submit">Add Item</button>
     </div>
 </body>
 </html>
