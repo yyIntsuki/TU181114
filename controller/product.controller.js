@@ -27,3 +27,10 @@ exports.update = function(req,res){
         res.send('product updated');
     });
 };
+
+exports.delete = function(req,res){
+    Product.findByIdAndDelete(req.params.id, {$set: req.body}, function(err, product){
+        if (err) return next(err);
+        res.send('Product deleted')
+    });
+};
