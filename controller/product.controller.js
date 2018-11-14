@@ -24,7 +24,7 @@ exports.details = function(req,res){
 exports.update = function(req,res){
     Product.finById(req.params.id,{$set: req.body}, function(err, product){
         if(err) return next(err);
-        res.send('product updated');
+        res.send('Product updated');
     });
 };
 
