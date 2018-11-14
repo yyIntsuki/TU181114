@@ -11,11 +11,11 @@ exports.create = function(req,res){
             return next(error);
         }
         res.send('Product created');
-    })
+    });
 };
 
 exports.details = function(req,res){
-    Product.finById(req.params.id, function(err, product){
+    Product.findById(req.params.id, function(err, product){
         if(err) return next(err);
         res.send(product);
     });
