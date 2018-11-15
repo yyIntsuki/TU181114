@@ -6,16 +6,25 @@
     <title>TU181114</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
-    <script src="request.js"></script> 
+    <script type="text/javascript" src="/request.js"></script> 
 </head>
 <body>
-    <div id ="body-content">
+    <div id = "body-content">
         <h2>Hello from node and Heroku.</h2>
 
+        <div id = "formular">
+        <h4>Add product using this form.</h4>
         <form action="/products/create" method="POST">
             <input type="text" placeholder="name" name="name">
             <input type="text" placeholder="price" name="price">
             <button type="submit">Add Item</button>
+        </div>
+
+        <div id="productList">
+            <h4>Press the button and the product list will be generated below.</h4>
+            <button type="button" onclick="loadDoc()">Get Product list</button>
+            <table id="productTable"></table>
+        </div>
     </div>
 </body>
 </html>

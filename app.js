@@ -13,13 +13,15 @@ var product = require('./routes/product.route');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.use('/', home)
+app.use('/', home);
+app.use('/', express.static(__dirname + '/www'));
 app.use('/products', product);
 
 mongoose.connect(db_url, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
 
+// Please use 'supervisor app.js' to start the server, it'll monitor changes in the files and restart automatically.
 app.listen(PORT, function(err){
   if(err) {
     console.log('Connection error.');
