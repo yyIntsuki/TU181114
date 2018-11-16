@@ -13,6 +13,14 @@ exports.create = function(req,res){
         res.send('Product created');
     });
 };
+// fetches the products from db
+exports.list = function(req,res){
+    Product.find(function(err, product){
+        if (err) return next(err);
+
+       res.send(product);
+    });
+};
 
 exports.details = function(req,res){
     product.collection('products').find({ projection: {_id: 0} }).toArray(function(err, result) {
