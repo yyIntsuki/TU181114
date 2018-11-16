@@ -6,7 +6,7 @@
     <title>TU181114</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
-    <script type="text/javascript" src="/request.js"></script> 
+    <script type="application/javascript" src="/request.js"></script> 
 </head>
 <body>
     <div id = "body-content">
@@ -16,13 +16,24 @@
         <h4>Add product using this form.</h4>
         <form action="/products/create" method="POST">
             <input type="text" placeholder="name" name="name">
+            <br><br>
             <input type="text" placeholder="price" name="price">
+            <br><br>
             <button type="submit">Add Item</button>
         </div>
 
-        <div id="productList">
-            <h4>Press the button and the product list will be generated below.</h4>
-            <button type="button" onclick="loadDoc()">Get Product list</button>
+        <br>
+        <div id = "dropdown-list">
+        <h4>Select a product from the dropdown list.</h4>
+        <form action ="">
+            <select id="dd-list" name="products" onchange="showProduct(this.value)">
+            <option value="">Select a product here</option>
+            </select>
+        </form>
+        </div>
+
+        <div id = "productInfo">
+            <h4>Product info will be shown below.</h4>
             <table id="productTable"></table>
         </div>
     </div>
